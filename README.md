@@ -45,6 +45,8 @@ represented a workflow execution thread in the real cloud. So, we can now predic
 training inputs. For example, We will train our input samples on 12 WorkflowSim VMs running 6 patient samples and then tested it on 12,
 24 and 48. See the example in the following link:
 https://github.com/Farisllwaah/NGS-Framework/blob/master/Testing%2012-Samples.pdf
+
+## Be careful to change VMs according to the Cores number
  
  
 
