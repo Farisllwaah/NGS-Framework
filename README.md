@@ -22,3 +22,9 @@ Initially, The framework needs input parameters such as MIPs and BandWidth that 
 input sample. So, you can run the Framework to work in a loop to find these parameters and then use them to configure input parameters. 
 For more details, you can see an example that is in the PDF file 
 https://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIPs%20%26%20BW.pdf
+
+# How to use the Input parameters  
+
+## First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose 'Import'. 
+
+https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
