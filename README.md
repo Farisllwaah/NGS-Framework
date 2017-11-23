@@ -38,7 +38,7 @@ you will need to set all variables on, raed through the text so that you can see
 https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
 
 
-# Testing a large samples
+# Testing a large sample
 
 The simulation environment was configured in the previous steps, i.e. MIPs & BW values now are known. However, each simulated VM 
 represented a workflow execution thread in the real cloud. So, we can now predict the runtime for testing data much larger than the
