@@ -43,7 +43,8 @@ https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20i
 The simulation environment was configured in the previous steps, i.e. MIPs & BW values now are known. However, each simulated VM 
 represented a workflow execution thread in the real cloud. So, we can now predict the runtime for testing data much larger than the
 training inputs. For example, We will train our input samples on 12 WorkflowSim VMs running 6 patient samples and then tested it on 12,
-24 and 48. 
+24 and 48. See the example in the following link:
+https://github.com/Farisllwaah/NGS-Framework/blob/master/Testing%2012-Samples.pdf
  
  
 
