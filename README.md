@@ -11,6 +11,7 @@ The development is achieved by adding a specific unit of the I/O contentions sol
 Either Java version 1.6 or newer 
 
 1- Installation and running the Simulator
+
 This software is built on to of WorkflowSim, which is an extension of the CloudSim simulator. Where, we have adapted it to simulate the
 execution behavior of the NGS pipeline as implemented in e-Science Central (e-SC). So, for more information you can visit the link
 https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master.  
