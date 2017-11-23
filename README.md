@@ -14,4 +14,4 @@ Either Java version 1.6 or newer
 
 This software is built on to of WorkflowSim, which is an extension of the CloudSim simulator. Where, we have adapted it to simulate the
 execution behavior of the NGS pipeline as implemented in e-Science Central (e-SC). So, for more information you can visit the link
-https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master.  
+https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master/readme.txt.  
