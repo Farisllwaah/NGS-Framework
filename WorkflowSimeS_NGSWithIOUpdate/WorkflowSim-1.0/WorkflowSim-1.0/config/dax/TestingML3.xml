@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Floodplain Mapping workflow (Figure 5 in Ramakrishnan and Gannon) -->
+<adag name="TestingMLPipeline" taskCount="8" fileCount="0" childCount="12" libraryCouny="5">
+	<task id="imf1" namespace="TestingMLPipeline" name="IMPORT FILE" runtime="0.1"  islibrary="no">
+		<uses file="mlpipeline_in.dat" link="input" size="35651584"/>
+		<uses file="imf_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="fildu1" namespace="TestingMLPipeline" name="Filter Duplication" runtime="0.1" islibrary="no" >
+		<uses file="imf_out.dat" link="input" size="849346560"/>
+		<uses file="fildu_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="CW1" namespace="TestingMLPipeline" name="ClustalW" runtime="2.22" islibrary="no"  >
+		<uses file="fildu_out.dat" link="input" size="35651584"/>
+		<uses file="cw_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="csvea1" namespace="TestingMLPipeline" name="CSVExportA" runtime="0.1" islibrary="no"  >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csvea_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="csveb1" namespace="TestingMLPipeline" name="CSVExportB" runtime="0.0" islibrary="no" >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csveb_out.dat" link="output" size="22572695552"/>
+	
+	</task>
+	<task id="mem1" namespace="TestingMLPipeline" name="MEGA_MAX" runtime="955.1" islibrary="no"  >
+		<uses file="cw_out.dat" link="input" size="2900361216"/>
+		<uses file="mem_out" link="output" size="11974737"/>
+		
+	</task>
+	<task id="exa1" namespace="TestingMLPipeline" name="ExportfileA"  runtime="0.0" islibrary="no">
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exa_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	
+	<task id="exb1" namespace="TestingMLPipeline" name="Exportfileb" runtime="0.1" islibrary="no" >
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exb_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="Core-lib1" namespace="TestingMLPipeline" name="Library1" storage="10000" runtime="1.2" islibrary="yes" >
+		
+	</task> 
+	
+	
+	<task id="Java1" namespace="TestingMLPipeline" name="Library2" storage="21000"  runtime='1.8'  islibrary="yes">
+	
+	</task>
+		
+	<task id="ClustalW-lib1" namespace="TestingMLPipeline" name="Library3" storage="31000" runtime='1.9'  islibrary="yes">
+	    
+	</task>
+	<task id="Wine1" namespace="TestingMLPipeline" storage="15000"  name="Library4" runtime='2.0'  islibrary="yes">
+	   
+	</task> 
+	
+	<task id="mega-CC1" namespace="TestingMLPipeline" name="Library5" storage='11000'  runtime='2.2'  islibrary="yes">
+	   
+	</task>
+	
+	<child ref="fildu1">
+	    <parent ref="imf1"/>
+	</child>
+	<child ref="CW1">
+	    <parent ref="fildu1"/>
+	</child>
+	<child ref="csvea1">
+		<parent ref="fildu1"/>
+	</child>
+	<child ref="csveb1">
+		<parent ref="fildu1"/>
+	</child>
+	<child ref="mem1">
+		<parent ref="CW1"/>
+	</child>
+	<child ref="exa1">
+		<parent ref="mem1"/>
+	</child>
+	<child ref="exb1">
+		<parent ref="mem1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="imf1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="fildu1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="CW1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="mem1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="csvea1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="csveb1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="exa1"/>
+	</child>
+	<child ref="Core-lib1">
+		<parent ref="exb1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="imf1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="fildu1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="CW1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="mem1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="csvea1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="csveb1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="exa1"/>
+	</child>
+	<child ref="Java1">
+		<parent ref="exb1"/>
+	</child>
+	<child ref="ClustalW-lib1">
+		<parent ref="CW1"/>
+	</child>
+	<child ref="Wine1">
+		<parent ref="mem1"/>
+	</child>
+	<child ref="mega-CC1">
+		<parent ref="mem1"/>
+	</child>	
+	
+	
+</adag>

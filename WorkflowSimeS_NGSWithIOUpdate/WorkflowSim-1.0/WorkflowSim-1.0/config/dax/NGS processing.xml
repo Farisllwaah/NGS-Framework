@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Floodplain Mapping workflow (Figure 5 in Ramakrishnan and Gannon) -->
+<adag name="NGSprocessingPipeline" taskCount="38" fileCount="0" childCount="35" libraryCouny="3">
+	<task id="BWA_align1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA_align2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample2.dat" link="input" size="35651584"/>
+		<uses file="BWA2_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA_align3" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample3.dat" link="input" size="35651584"/>
+		<uses file="BWA3_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA_align4" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample4.dat" link="input" size="35651584"/>
+		<uses file="BWA4_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA_algin5" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample5.dat" link="input" size="35651584"/>
+		<uses file="BWA5_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA_algin6" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample6.dat" link="input" size="35651584"/>
+		<uses file="BWA6_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA1_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA1_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA2_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA2_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA3_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA3_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA4_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA4_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA5_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA5_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA6_1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWA6_2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWAB1" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWAB2" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWAB3" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWAB4" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="BWAB5" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		 
+	</task>
+	<task id="BWAB6" namespace="NGSprocessingPipeline" name="BWA Align lane" runtime="0.1"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="35651584"/>
+		<uses file="BWA1_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="PICARD1" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA1_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD1_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="PICARD2" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA2_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD2_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="PICARD3" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA3_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD3_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="PICARD4" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA4_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD4_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="PICARD5" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA5_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD5_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="PICARD6" namespace="NGSprocessingPipeline" name="Picard Workflow" runtime="0.1" islibrary="no" >
+		<uses file="BWA6_out.dat" link="input" size="849346560"/>
+		<uses file="PICARD6_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="GATKP1_1" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD1_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_1_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="GATKP1_2" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD2_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_2_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="GATKP1_3" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD3_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_3_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="GATKP1_4" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD4_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_4_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="GATKP1_5" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD5_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_5_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="GATKP1_6" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="2.22" islibrary="no"  >
+		<uses file="PICARD6_out.dat" link="input" size="35651584"/>
+		<uses file="GATKP1_6_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="COVERAGE1" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_1_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE1_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="COVERAGE2" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_2_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE2_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="COVERAGE3" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_3_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE3_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="COVERAGE4" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_4_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE4_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="COVERAGE5" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_5_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE5_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="COVERAGE6" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="0.1" islibrary="no"  >
+		<uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="VARIANTA" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+		<uses file="GATKP1_1_out_out.dat" link="input" size="559939584"/>
+		<uses file="GATKP1_2_out.dat" link="input" size="559939584"/>
+		<uses file="GATKP1_3_out.dat" link="input" size="559939584"/>
+		<uses file="GATKP1_4_out.dat" link="input" size="559939584"/>
+		<uses file="GATKP1_5_out.dat" link="input" size="559939584"/>
+		<uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="VARIANTA_out.dat" link="output" size="22572695552"/>
+	
+	</task>
+	<task id="VARIANTA1-B1" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA2-B2" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA3-B3" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA4-B4" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA5-B5" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA6-B6" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA7-B7" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA8-B8" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA9-B9" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/>
+	</task>
+	<task id="VARIANTA10-B10" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA11-B11" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA12-B12" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA13-B13" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA14-B14" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA15-B15" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA16-B16" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA17-B17" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA18-B18" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA19-B19" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA20-B20" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA21-B21" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA22-B22" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA23-B23" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA24-B24" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTA25-B25" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="VARIANTB" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.0" islibrary="no" >
+	    <uses file="GATKP1_6_out.dat" link="input" size="559939584"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="GATKP3" namespace="NGSprocessingPipeline" name="GATK phase 3" runtime="995.1" islibrary="no"  >
+		<uses file="VARIANT_out.dat" link="input" size="2900361216"/>
+		<uses file="GATKP3_out" link="output" size="11974737"/>
+		
+	</task>
+	<task id="VCF1" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF1_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="VCF2" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF2_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="VCF3" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF3_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="VCF4" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF4_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="VCF5" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no">
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF5_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="VCF6" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="0.0" islibrary="no">
+		<uses file="GATKP3_out.dat" link="input" size="2900361216"/>
+		<uses file="VCF6_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE1" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF1_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE1_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE2" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF2_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE2_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE3" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF3_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE3_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE4" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF4_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE4_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE5" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF5_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE5_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="ANNOTATE6" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="0.1" islibrary="no" >
+		<uses file="VCF6_out.dat" link="input" size="2900361216"/>
+		<uses file="ANNOTATE6_out.dat" link="output" size="14680064"/>
+		
+	</task>
+		
+	<task id="Core" namespace="NGSprocessingPipeline" name="Library1" storage="10000" runtime="1.2" islibrary="yes" >
+		
+	</task> 
+	<task id="BWA0.7" namespace="NGSprocessingPipeline" name="Library2" storage="10000" runtime="1.2" islibrary="yes" >
+		
+	</task>
+	<task id="SamTools" namespace="NGSprocessingPipeline" name="Library3" storage="10000" runtime="1.2" islibrary="yes" >
+	</task> 
+	
+	<child ref="BWA1_1">
+	    <parent ref="BWA_align1"/>
+	</child>
+	<child ref="BWA1_2">
+	    <parent ref="BWA_align1"/>
+	</child>
+	<child ref="BWA2_1">
+	    <parent ref="BWA_align2"/>
+	</child>
+	<child ref="BWA2_2">
+	    <parent ref="BWA_align2"/>
+	</child>
+	<child ref="BWA3_1">
+	    <parent ref="BWA_align3"/>
+	</child>
+	<child ref="BWA3_2">
+	    <parent ref="BWA_align3"/>
+	</child>
+	<child ref="BWA4_1">
+	    <parent ref="BWA_align4"/>
+	</child>
+	<child ref="BWA4_2">
+	    <parent ref="BWA_align4"/>
+	</child>
+	<child ref="BWA5_1">
+	    <parent ref="BWA_align5"/>
+	</child>
+	<child ref="BWA5_2">
+	    <parent ref="BWA_align5"/>
+	</child>
+	<child ref="BWA6_1">
+	    <parent ref="BWA_align6"/>
+	</child>
+	<child ref="BWA6_2">
+	    <parent ref="BWA_align6"/>
+	</child>
+	<child ref="BWAB1">
+	    <parent ref="BWA1_1"/>
+	</child>
+	<child ref="BWAB1">
+	    <parent ref="BWA1_2"/>
+	</child>
+	<child ref="BWAB2">
+	    <parent ref="BWA2_1"/>
+	</child>
+	<child ref="BWAB2">
+	    <parent ref="BWA2_2"/>
+	</child>
+	<child ref="BWAB3">
+	    <parent ref="BWA3_1"/>
+	</child>
+	<child ref="BWAB3">
+	    <parent ref="BWA3_2"/>
+	</child>
+	<child ref="BWAB4">
+	    <parent ref="BWA4_1"/>
+	</child>
+	<child ref="BWAB4">
+	    <parent ref="BWA4_2"/>
+	</child>
+	<child ref="BWAB5">
+	    <parent ref="BWA5_1"/>
+	</child>
+	<child ref="BWAB5">
+	    <parent ref="BWA5_2"/>
+	</child>
+	<child ref="BWAB6">
+	    <parent ref="BWA6_1"/>
+	</child>
+	<child ref="BWAB6">
+	    <parent ref="BWA6_2"/>
+	</child>
+	<child ref="PICARD1">
+	    <parent ref="BWAB1"/>
+	</child>
+	<child ref="PICARD2">
+	    <parent ref="BWAB2"/>
+	</child>
+	<child ref="PICARD3">
+		<parent ref="BWAB3"/>
+	</child>
+	<child ref="PICARD4">
+		<parent ref="BWAB4"/>
+	</child>
+	<child ref="PICARD5">
+		<parent ref="BWAB5"/>
+	</child>
+	<child ref="PICARD6">
+		<parent ref="BWAB6"/>
+	</child>
+	<child ref="GATKP1_1">
+		<parent ref="PICARD1"/>
+	</child>
+	<child ref="GATKP1_2">
+		<parent ref="PICARD2"/>
+	</child>
+	<child ref="GATKP1_3">
+		<parent ref="PICARD3"/>
+	</child>
+	<child ref="GATKP1_4">
+		<parent ref="PICARD4"/>
+	</child>
+	<child ref="GATKP1_5">
+		<parent ref="PICARD5"/>
+	</child>
+	<child ref="GATKP1_6">
+		<parent ref="PICARD6"/>
+	</child>
+	<child ref="COVERAGE1">
+		<parent ref="GATKP1_1"/>
+	</child>
+	<child ref="COVERAGE2">
+		<parent ref="GATKP1_2"/>
+	</child>
+	<child ref="COVERAGE3">
+		<parent ref="GATKP1_3"/>
+	</child>
+	<child ref="COVERAGE4">
+		<parent ref="GATKP1_4"/>
+	</child>
+	<child ref="COVERAGE5">
+		<parent ref="GATKP1_5"/>
+	</child>
+	<child ref="COVERAGE6">
+		<parent ref="GATKP1_6"/>
+	</child>
+	<child ref="VARIANTA">
+		<parent ref="GATKP1_1"/>
+		<parent ref="GATKP1_2"/>
+		<parent ref="GATKP1_3"/>
+		<parent ref="GATKP1_4"/>
+		<parent ref="GATKP1_5"/>
+		<parent ref="GATKP1_6"/>
+	</child>
+	<child ref="VARIANTA1-B1">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA2-B2">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA3-B3">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA4-B4">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA5-B5">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA6-B6">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA7-B7">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA8-B8">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA9-B9">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA10-B10">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA11-B11">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA12-B12">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA13-B13">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA14-B14">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA15-B15">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA16-B16">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA17-B17">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA18-B18">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA19-B19">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA20-B20">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA21-B21">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA22-B22">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA23-B23">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA24-B24">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTA25-B25">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTB">
+	<parent ref="VARIANTA1-B1"/>
+	<parent ref="VARIANTA2-B2"/>
+	<parent ref="VARIANTA3-B3"/>
+	<parent ref="VARIANTA4-B4"/>
+	<parent ref="VARIANTA5-B5"/>
+	<parent ref="VARIANTA6-B6"/>
+	<parent ref="VARIANTA7-B7"/>
+	<parent ref="VARIANTA8-B8"/>
+	<parent ref="VARIANTA9-B9"/>
+	<parent ref="VARIANTA10-B10"/>
+	<parent ref="VARIANTA11-B11"/>
+	<parent ref="VARIANTA12-B12"/>
+	<parent ref="VARIANTA13-B13"/>
+	<parent ref="VARIANTA14-B14"/>
+	<parent ref="VARIANTA15-B15"/>
+	<parent ref="VARIANTA16-B16"/>
+	<parent ref="VARIANTA17-B17"/>
+	<parent ref="VARIANTA18-B18"/>
+	<parent ref="VARIANTA19-B19"/>
+	<parent ref="VARIANTA20-B20"/>
+	<parent ref="VARIANTA21-B21"/>
+	<parent ref="VARIANTA22-B22"/>
+	<parent ref="VARIANTA23-B23"/>
+	<parent ref="VARIANTA24-B24"/>
+	<parent ref="VARIANTA25-B25"/>
+	</child>
+	<child ref="GATKP3">
+		<parent ref="VARIANTB"/>
+	</child>
+	<child ref="VCF1">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF2">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF3">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF4">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF5">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF6">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="ANNOTATE1">
+		<parent ref="VCF1"/>
+	</child>
+	<child ref="ANNOTATE2">
+		<parent ref="VCF2"/>
+	</child>
+	<child ref="ANNOTATE3">
+		<parent ref="VCF3"/>
+	</child>
+	<child ref="ANNOTATE4">
+		<parent ref="VCF4"/>
+	</child>
+	<child ref="ANNOTATE5">
+		<parent ref="VCF5"/>
+	</child>
+	<child ref="ANNOTATE6">
+		<parent ref="VCF6"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA1"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA2"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA3"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA4"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA5"/>
+	</child>
+	<child ref="Core">
+		<parent ref="BWA6"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA1"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA2"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA3"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA4"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA5"/>
+	</child>
+	<child ref="BWA0.7">
+		<parent ref="BWA6"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD1"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD2"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD3"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD4"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD5"/>
+	</child>
+	<child ref="Core">
+		<parent ref="PICARD6"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD1"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD2"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD3"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD4"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD5"/>
+	</child>
+	<child ref="SamTools">
+		<parent ref="PICARD6"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_1"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_2"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_3"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_4"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_5"/>
+	</child>
+	<child ref="Core">
+		<parent ref="GATKP1_6"/>
+	</child>
+	
+	
+</adag>

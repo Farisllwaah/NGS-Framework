@@ -1,0 +1,838 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<PipelineDocument>
+
+
+-<Data>
+
+
+-<Parameter Type="XmlDataStore" Name="Drawing" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Connection1SourcePort" ExposedProperty="false" Value="joined-data"/>
+
+
+-<Parameter Type="XmlStorable" Name="Connection2Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.ConnectionModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ConnectionPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="PointCount" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Connection0Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.ConnectionModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ConnectionPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="PointCount" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="Integer" Name="BlockCount" ExposedProperty="false" Value="4"/>
+
+<Parameter Type="String" Name="Connection0SourceBlock" ExposedProperty="false" Value="322C5FD9-11F3-24B7-18D5-6235A40922FA"/>
+
+
+-<Parameter Type="XmlStorable" Name="Block2Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.BlockModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="BlockPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="Width" ExposedProperty="false" Value="60"/>
+
+<Parameter Type="Integer" Name="Top" ExposedProperty="false" Value="102"/>
+
+<Parameter Type="Integer" Name="Left" ExposedProperty="false" Value="445"/>
+
+<Parameter Type="Integer" Name="Height" ExposedProperty="false" Value="60"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="String" Name="Connection2SourcePort" ExposedProperty="false" Value="imported-data"/>
+
+<Parameter Type="String" Name="Connection0TargetPort" ExposedProperty="false" Value="right-hand-data"/>
+
+
+-<Parameter Type="XmlStorable" Name="Block1Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.BlockModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="BlockPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="Width" ExposedProperty="false" Value="60"/>
+
+<Parameter Type="Integer" Name="Top" ExposedProperty="false" Value="120"/>
+
+<Parameter Type="Integer" Name="Left" ExposedProperty="false" Value="652"/>
+
+<Parameter Type="Integer" Name="Height" ExposedProperty="false" Value="60"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="String" Name="Connection1SourceBlock" ExposedProperty="false" Value="010CC405-F85B-9A27-AABC-1CA0761F764D"/>
+
+<Parameter Type="String" Name="Connection1TargetPort" ExposedProperty="false" Value="input-data"/>
+
+<Parameter Type="String" Name="Connection0TargetBlock" ExposedProperty="false" Value="010CC405-F85B-9A27-AABC-1CA0761F764D"/>
+
+<Parameter Type="String" Name="Connection2SourceBlock" ExposedProperty="false" Value="D2811FBB-4DA8-5FFB-E398-1F370608F190"/>
+
+<Parameter Type="Integer" Name="LinkCount" ExposedProperty="false" Value="3"/>
+
+
+-<Parameter Type="XmlStorable" Name="Connection1Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.ConnectionModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ConnectionPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="PointCount" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="String" Name="Connection2TargetPort" ExposedProperty="false" Value="left-hand-data"/>
+
+<Parameter Type="String" Name="Connection1TargetBlock" ExposedProperty="false" Value="4A0A53D1-21B0-2B7A-1C8D-9BDC0F7A7319"/>
+
+
+-<Parameter Type="XmlStorable" Name="Block3" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.workflow.blocks.processor.DataProcessorBlock" ObjectSigned="false">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="Block" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Description" ExposedProperty="false" Value="Reads data in CSV format into the workflow"/>
+
+<Parameter Type="Boolean" Name="Deterministic" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="Idempotent" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="DynamicService" ExposedProperty="false" Value="true"/>
+
+
+-<Parameter Type="XmlDataStore" Name="EditableProperties" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Long" Name="StartRow" ExposedProperty="false" Value="1" ExposedName="StartRow" Description="Beginning row of data to be imported" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Boolean" Name="ProceedOnFail" ExposedProperty="false" Value="false" Description="Should the workflow proceed even if this block fails"/>
+
+<Parameter Type="Boolean" Name="EnforceInvocationTimeout" ExposedProperty="false" Value="true" Description="Should the invocation timeout be enforced for this block"/>
+
+<Parameter Type="Boolean" Name="AllowRetriesOnTimeout" ExposedProperty="false" Value="false" Description="Should the workflow engine attempt to rerun the block if the execution times out"/>
+
+<Parameter Type="String" Name="Delimiter" ExposedProperty="false" Value="," ExposedName="Delimiter" Description="Column delimiter character" Category="Block"/>
+
+<Parameter Type="Long" Name="ImportChunkSize" ExposedProperty="false" Value="5000" ExposedName="ImportChunkSize" Description="Number of rows in each data chunk" DefaultValue="5000" Category="Block"/>
+
+<Parameter Type="Integer" Name="InvocationTimeout" ExposedProperty="false" Value="3600" Description="Maximum waiting time for service (seconds)"/>
+
+<Parameter Type="Long" Name="EndRow" ExposedProperty="false" Value="2" ExposedName="EndRow" Description="Last row of data to be imported" DefaultValue="2" Category="Block"/>
+
+<Parameter Type="Long" Name="SampleInterval" ExposedProperty="false" Value="1" ExposedName="SampleInterval" Description="Subsampling row interval" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Integer" Name="TimeoutRetries" ExposedProperty="false" Value="1" Description="Number of times the workflow engine will try to rerun this block if the execution times out"/>
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="block_3" Description="Block name"/>
+
+<Parameter Type="Boolean" Name="UploadStdOutAndErr" ExposedProperty="false" Value="false" Description="Should the standard error and output streams be uploaded for this block"/>
+
+<Parameter Type="String" Name="StrOutAndErrFileName" ExposedProperty="false" Value="Debug-" Description="Base name for the uploaded standard output and error streams"/>
+
+<Parameter Type="String" Name="Caption" ExposedProperty="false" Value="" Description="Text to be displayed beneath block"/>
+
+<Parameter Type="Integer" Name="StreamingChunkSize" ExposedProperty="false" Value="1000" Description="Number of rows to pass through the block in any single streaming chunk"/>
+
+
+-<Parameter Type="XmlStorable" Name="Source" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.model.document.DocumentRecord" ExposedName="Source" Description="Document to import" Category="Block">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ServerObject" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="MaxVersions" ExposedProperty="false" Value="10"/>
+
+<Parameter Type="Boolean" Name="LimitVersions" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Boolean" Name="Versioned" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Long" Name="CurrentVersionSize" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Integer" Name="CurrentArchiveStatus" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Long" Name="TimeInMillis" ExposedProperty="false" Value="1422953805497"/>
+
+<Parameter Type="Integer" Name="CurrentVersionNumber" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="LimitRows" ExposedProperty="false" Value="false" ExposedName="LimitRows" Description="Stop importing after the specified number of rows" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="Boolean" Name="GuessDataTypes" ExposedProperty="false" Value="true" ExposedName="GuessDataTypes" Description="Try to guess the data types from the column contents" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="Boolean" Name="TextOnly" ExposedProperty="false" Value="false" ExposedName="TextOnly" Description="Treat all the data as String values" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="String" Name="Label" ExposedProperty="false" Value="CSVImport" Description="Text for block title bar"/>
+
+<Parameter Type="Long" Name="LabelRow" ExposedProperty="false" Value="1" ExposedName="LabelRow" Description="Row containing column headings" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Boolean" Name="Subsample" ExposedProperty="false" Value="false" ExposedName="Subsample" Description="Subsample the imported data" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="Integer" Name="StdOutSize" ExposedProperty="false" Value="4096" Description="Size of the standard output capture buffer that will be sent back to the database"/>
+
+<Parameter Type="Boolean" Name="ContainsLabels" ExposedProperty="false" Value="true" ExposedName="ContainsLabels" Description="Does the data set contain a row with column names" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="Integer" Name="ProgressUpdateInterval" ExposedProperty="false" Value="30" Description="Number of seconds that must elapse before a progress update message is sent"/>
+
+</Parameter>
+
+<Parameter Type="String" Name="ServiceID" ExposedProperty="false" Value="blocks-core-io-csvimport"/>
+
+<Parameter Type="Integer" Name="VersionNumber" ExposedProperty="false" Value="0"/>
+
+
+-<Parameter Type="XmlDataStore" Name="OutputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="1"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomOutputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="imported-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="2"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="50"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="String" Name="GUID" ExposedProperty="false" Value="D2811FBB-4DA8-5FFB-E398-1F370608F190"/>
+
+<Parameter Type="String" Name="VersionID" ExposedProperty="false" Value="null"/>
+
+
+-<Parameter Type="XmlDataStore" Name="InputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="UsesLatestVersion" ExposedProperty="false" Value="true"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Block3Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.BlockModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="BlockPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="Width" ExposedProperty="false" Value="60"/>
+
+<Parameter Type="Integer" Name="Top" ExposedProperty="false" Value="60"/>
+
+<Parameter Type="Integer" Name="Left" ExposedProperty="false" Value="260"/>
+
+<Parameter Type="Integer" Name="Height" ExposedProperty="false" Value="60"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Block2" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.workflow.blocks.processor.DataProcessorBlock" ObjectSigned="false">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="Block" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Description" ExposedProperty="false" Value="Joins two input DataTables into a single DataTable"/>
+
+<Parameter Type="Boolean" Name="Deterministic" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="Idempotent" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="DynamicService" ExposedProperty="false" Value="true"/>
+
+
+-<Parameter Type="XmlDataStore" Name="EditableProperties" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Boolean" Name="ProceedOnFail" ExposedProperty="false" Value="false" Description="Should the workflow proceed even if this block fails"/>
+
+<Parameter Type="Boolean" Name="UploadStdOutAndErr" ExposedProperty="false" Value="false" Description="Should the standard error and output streams be uploaded for this block"/>
+
+<Parameter Type="String" Name="StrOutAndErrFileName" ExposedProperty="false" Value="Debug-" Description="Base name for the uploaded standard output and error streams"/>
+
+<Parameter Type="Boolean" Name="AllowRetriesOnTimeout" ExposedProperty="false" Value="false" Description="Should the workflow engine attempt to rerun the block if the execution times out"/>
+
+<Parameter Type="Integer" Name="StreamingChunkSize" ExposedProperty="false" Value="1000" Description="Number of rows to pass through the block in any single streaming chunk"/>
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="block_2" Description="Block name"/>
+
+<Parameter Type="Integer" Name="StdOutSize" ExposedProperty="false" Value="4096" Description="Size of the standard output capture buffer that will be sent back to the database"/>
+
+<Parameter Type="String" Name="Label" ExposedProperty="false" Value="Column Join" Description="Text for block title bar"/>
+
+<Parameter Type="Boolean" Name="EnforceInvocationTimeout" ExposedProperty="false" Value="true" Description="Should the invocation timeout be enforced for this block"/>
+
+<Parameter Type="String" Name="Equalise Columns" ExposedProperty="false" Value="NO" ExposedName="Equalise Columns" Description="Specify behaviour when left and right hand side columns have different lengths. NO means that missing value will be added to the shorter columns. PAD_LAST means that the shorter columns will be padded with the values from their last row. PAD_CYCLIC means that the shorter columns will be padded with the values starting from their first row, then second, third, until the last row, and if even more padding is needed then again the first, second, and following rows will be copied. TRIM means that the columns from the longer set will be cut to the length of the shorter ones. TRIM_ALL means that all columns will be trimmed to the shortest column in both sets." Category="Block" Options="NO,PAD_LAST,PAD_CYCLIC,TRIM,TRIM_ALL"/>
+
+<Parameter Type="String" Name="Caption" ExposedProperty="false" Value="" Description="Text to be displayed beneath block"/>
+
+<Parameter Type="Integer" Name="InvocationTimeout" ExposedProperty="false" Value="3600" Description="Maximum waiting time for service (seconds)"/>
+
+<Parameter Type="Integer" Name="TimeoutRetries" ExposedProperty="false" Value="1" Description="Number of times the workflow engine will try to rerun this block if the execution times out"/>
+
+<Parameter Type="Integer" Name="ProgressUpdateInterval" ExposedProperty="false" Value="30" Description="Number of seconds that must elapse before a progress update message is sent"/>
+
+<Parameter Type="Boolean" Name="Ignore If Empty" ExposedProperty="false" Value="false" ExposedName="Ignore If Empty" Description="If ticked, the output will NOT include an empty column if either of the inputs contains empty columns. Otherwise, it will include a column filled with missing values." DefaultValue="false" Category="Block"/>
+
+</Parameter>
+
+<Parameter Type="String" Name="ServiceID" ExposedProperty="false" Value="blocks-core-manipulation-columnjoin"/>
+
+<Parameter Type="Integer" Name="VersionNumber" ExposedProperty="false" Value="0"/>
+
+
+-<Parameter Type="XmlDataStore" Name="OutputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="1"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomOutputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="joined-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="2"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="50"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="String" Name="GUID" ExposedProperty="false" Value="010CC405-F85B-9A27-AABC-1CA0761F764D"/>
+
+<Parameter Type="String" Name="VersionID" ExposedProperty="false" Value="null"/>
+
+
+-<Parameter Type="XmlDataStore" Name="InputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="2"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition1" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomInputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="right-hand-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Boolean" Name="Optional" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="70"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomInputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="left-hand-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Boolean" Name="Optional" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="30"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="UsesLatestVersion" ExposedProperty="false" Value="true"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Block1" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.workflow.blocks.processor.DataProcessorBlock" ObjectSigned="false">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="Block" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Description" ExposedProperty="false" Value="Exports data as a CSV file"/>
+
+<Parameter Type="Boolean" Name="Deterministic" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="Idempotent" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="DynamicService" ExposedProperty="false" Value="true"/>
+
+
+-<Parameter Type="XmlDataStore" Name="EditableProperties" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Boolean" Name="ProceedOnFail" ExposedProperty="false" Value="false" Description="Should the workflow proceed even if this block fails"/>
+
+<Parameter Type="Boolean" Name="EnforceInvocationTimeout" ExposedProperty="false" Value="true" Description="Should the invocation timeout be enforced for this block"/>
+
+<Parameter Type="Boolean" Name="AllowRetriesOnTimeout" ExposedProperty="false" Value="false" Description="Should the workflow engine attempt to rerun the block if the execution times out"/>
+
+<Parameter Type="Integer" Name="InvocationTimeout" ExposedProperty="false" Value="3600" Description="Maximum waiting time for service (seconds)"/>
+
+<Parameter Type="Integer" Name="TimeoutRetries" ExposedProperty="false" Value="1" Description="Number of times the workflow engine will try to rerun this block if the execution times out"/>
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="block_1" Description="Block name"/>
+
+<Parameter Type="Boolean" Name="UploadStdOutAndErr" ExposedProperty="false" Value="false" Description="Should the standard error and output streams be uploaded for this block"/>
+
+<Parameter Type="Boolean" Name="AutomaticFolder" ExposedProperty="false" Value="true" ExposedName="AutomaticFolder" Description="Use the invocation folder for generated data" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="String" Name="StrOutAndErrFileName" ExposedProperty="false" Value="Debug-" Description="Base name for the uploaded standard output and error streams"/>
+
+<Parameter Type="String" Name="Caption" ExposedProperty="false" Value="" Description="Text to be displayed beneath block"/>
+
+<Parameter Type="Integer" Name="StreamingChunkSize" ExposedProperty="false" Value="1000" Description="Number of rows to pass through the block in any single streaming chunk"/>
+
+<Parameter Type="String" Name="Label" ExposedProperty="false" Value="CSVExport" Description="Text for block title bar"/>
+
+
+-<Parameter Type="XmlStorable" Name="TargetFolder" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.model.folder.Folder" ExposedName="TargetFolder" Description="Folder to store output data" Category="Block">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ServerObject" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Long" Name="TimeInMillis" ExposedProperty="false" Value="1422953805493"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="Integer" Name="StdOutSize" ExposedProperty="false" Value="4096" Description="Size of the standard output capture buffer that will be sent back to the database"/>
+
+<Parameter Type="Boolean" Name="IncludeNames" ExposedProperty="false" Value="true" ExposedName="IncludeNames" Description="Include the column names in the output file" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="Integer" Name="ProgressUpdateInterval" ExposedProperty="false" Value="30" Description="Number of seconds that must elapse before a progress update message is sent"/>
+
+<Parameter Type="String" Name="FileName" ExposedProperty="false" Value="out.csv" ExposedName="FileName" Description="Name of CSV File" Category="Block"/>
+
+<Parameter Type="Boolean" Name="QuoteStringOutput" ExposedProperty="false" Value="false" ExposedName="QuoteStringOutput" Description="Surround all String output in Quotes" DefaultValue="false" Category="Block"/>
+
+</Parameter>
+
+<Parameter Type="String" Name="ServiceID" ExposedProperty="false" Value="blocks-core-io-csvexport"/>
+
+<Parameter Type="Integer" Name="VersionNumber" ExposedProperty="false" Value="0"/>
+
+
+-<Parameter Type="XmlDataStore" Name="OutputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="2"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition1" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomOutputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="file-reference"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="2"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="link-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="70"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomOutputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="document-id"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="2"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="30"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="String" Name="GUID" ExposedProperty="false" Value="4A0A53D1-21B0-2B7A-1C8D-9BDC0F7A7319"/>
+
+<Parameter Type="String" Name="VersionID" ExposedProperty="false" Value="null"/>
+
+
+-<Parameter Type="XmlDataStore" Name="InputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="1"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomInputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="input-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Boolean" Name="Optional" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="50"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="UsesLatestVersion" ExposedProperty="false" Value="true"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+
+-<Parameter Type="XmlStorable" Name="Block0" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.workflow.blocks.processor.DataProcessorBlock" ObjectSigned="false">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="Block" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Description" ExposedProperty="false" Value="Reads data in CSV format into the workflow"/>
+
+<Parameter Type="Boolean" Name="Deterministic" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="Idempotent" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Boolean" Name="DynamicService" ExposedProperty="false" Value="true"/>
+
+
+-<Parameter Type="XmlDataStore" Name="EditableProperties" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Long" Name="StartRow" ExposedProperty="false" Value="1" ExposedName="StartRow" Description="Beginning row of data to be imported" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Boolean" Name="ProceedOnFail" ExposedProperty="false" Value="false" Description="Should the workflow proceed even if this block fails"/>
+
+<Parameter Type="Boolean" Name="EnforceInvocationTimeout" ExposedProperty="false" Value="true" Description="Should the invocation timeout be enforced for this block"/>
+
+<Parameter Type="Boolean" Name="AllowRetriesOnTimeout" ExposedProperty="false" Value="false" Description="Should the workflow engine attempt to rerun the block if the execution times out"/>
+
+<Parameter Type="String" Name="Delimiter" ExposedProperty="false" Value="," ExposedName="Delimiter" Description="Column delimiter character" Category="Block"/>
+
+<Parameter Type="Long" Name="ImportChunkSize" ExposedProperty="false" Value="5000" ExposedName="ImportChunkSize" Description="Number of rows in each data chunk" DefaultValue="5000" Category="Block"/>
+
+<Parameter Type="Integer" Name="InvocationTimeout" ExposedProperty="false" Value="3600" Description="Maximum waiting time for service (seconds)"/>
+
+<Parameter Type="Long" Name="EndRow" ExposedProperty="false" Value="2" ExposedName="EndRow" Description="Last row of data to be imported" DefaultValue="2" Category="Block"/>
+
+<Parameter Type="Long" Name="SampleInterval" ExposedProperty="false" Value="1" ExposedName="SampleInterval" Description="Subsampling row interval" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Integer" Name="TimeoutRetries" ExposedProperty="false" Value="1" Description="Number of times the workflow engine will try to rerun this block if the execution times out"/>
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="block_0" Description="Block name"/>
+
+<Parameter Type="Boolean" Name="UploadStdOutAndErr" ExposedProperty="false" Value="false" Description="Should the standard error and output streams be uploaded for this block"/>
+
+<Parameter Type="String" Name="StrOutAndErrFileName" ExposedProperty="false" Value="Debug-" Description="Base name for the uploaded standard output and error streams"/>
+
+<Parameter Type="String" Name="Caption" ExposedProperty="false" Value="" Description="Text to be displayed beneath block"/>
+
+<Parameter Type="Integer" Name="StreamingChunkSize" ExposedProperty="false" Value="1000" Description="Number of rows to pass through the block in any single streaming chunk"/>
+
+
+-<Parameter Type="XmlStorable" Name="Source" ExposedProperty="false" ExpectedClassName="" ClassName="com.connexience.server.model.document.DocumentRecord" ExposedName="Source" Description="Document to import" Category="Block">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="ServerObject" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="MaxVersions" ExposedProperty="false" Value="10"/>
+
+<Parameter Type="Boolean" Name="LimitVersions" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Boolean" Name="Versioned" ExposedProperty="false" Value="true"/>
+
+<Parameter Type="Long" Name="CurrentVersionSize" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Integer" Name="CurrentArchiveStatus" ExposedProperty="false" Value="0"/>
+
+<Parameter Type="Long" Name="TimeInMillis" ExposedProperty="false" Value="1422953805491"/>
+
+<Parameter Type="Integer" Name="CurrentVersionNumber" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="LimitRows" ExposedProperty="false" Value="false" ExposedName="LimitRows" Description="Stop importing after the specified number of rows" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="Boolean" Name="GuessDataTypes" ExposedProperty="false" Value="true" ExposedName="GuessDataTypes" Description="Try to guess the data types from the column contents" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="Boolean" Name="TextOnly" ExposedProperty="false" Value="false" ExposedName="TextOnly" Description="Treat all the data as String values" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="String" Name="Label" ExposedProperty="false" Value="CSVImport" Description="Text for block title bar"/>
+
+<Parameter Type="Long" Name="LabelRow" ExposedProperty="false" Value="1" ExposedName="LabelRow" Description="Row containing column headings" DefaultValue="1" Category="Block"/>
+
+<Parameter Type="Boolean" Name="Subsample" ExposedProperty="false" Value="false" ExposedName="Subsample" Description="Subsample the imported data" DefaultValue="false" Category="Block"/>
+
+<Parameter Type="Integer" Name="StdOutSize" ExposedProperty="false" Value="4096" Description="Size of the standard output capture buffer that will be sent back to the database"/>
+
+<Parameter Type="Boolean" Name="ContainsLabels" ExposedProperty="false" Value="true" ExposedName="ContainsLabels" Description="Does the data set contain a row with column names" DefaultValue="true" Category="Block"/>
+
+<Parameter Type="Integer" Name="ProgressUpdateInterval" ExposedProperty="false" Value="30" Description="Number of seconds that must elapse before a progress update message is sent"/>
+
+</Parameter>
+
+<Parameter Type="String" Name="ServiceID" ExposedProperty="false" Value="blocks-core-io-csvimport"/>
+
+<Parameter Type="Integer" Name="VersionNumber" ExposedProperty="false" Value="0"/>
+
+
+-<Parameter Type="XmlDataStore" Name="OutputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="1"/>
+
+
+-<Parameter Type="XmlStorable" Name="Definition0" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.customio.CustomOutputDefinition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="CustomIO" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="String" Name="Name" ExposedProperty="false" Value="imported-data"/>
+
+<Parameter Type="Boolean" Name="Streamable" ExposedProperty="false" Value="false"/>
+
+<Parameter Type="Integer" Name="Location" ExposedProperty="false" Value="2"/>
+
+<Parameter Type="String" Name="DataTypeName" ExposedProperty="false" Value="data-wrapper"/>
+
+<Parameter Type="Integer" Name="Offset" ExposedProperty="false" Value="50"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+</Parameter>
+
+<Parameter Type="String" Name="GUID" ExposedProperty="false" Value="322C5FD9-11F3-24B7-18D5-6235A40922FA"/>
+
+<Parameter Type="String" Name="VersionID" ExposedProperty="false" Value="null"/>
+
+
+-<Parameter Type="XmlDataStore" Name="InputDefinitions" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="DefinitionCount" ExposedProperty="false" Value="0"/>
+
+</Parameter>
+
+<Parameter Type="Boolean" Name="UsesLatestVersion" ExposedProperty="false" Value="true"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="String" Name="Connection2TargetBlock" ExposedProperty="false" Value="010CC405-F85B-9A27-AABC-1CA0761F764D"/>
+
+
+-<Parameter Type="XmlStorable" Name="Block0Position" ExposedProperty="false" ExpectedClassName="" ClassName="org.pipeline.core.drawing.layout.BlockModelPosition">
+
+
+-<ClassData>
+
+
+-<Parameter Type="XmlDataStore" Name="BlockPosition" ExposedProperty="false" AutoAdd="false">
+
+<Parameter Type="Integer" Name="Width" ExposedProperty="false" Value="60"/>
+
+<Parameter Type="Integer" Name="Top" ExposedProperty="false" Value="187"/>
+
+<Parameter Type="Integer" Name="Left" ExposedProperty="false" Value="252"/>
+
+<Parameter Type="Integer" Name="Height" ExposedProperty="false" Value="60"/>
+
+</Parameter>
+
+</ClassData>
+
+</Parameter>
+
+<Parameter Type="String" Name="Connection0SourcePort" ExposedProperty="false" Value="imported-data"/>
+
+<Parameter Type="XmlDataStore" Name="AuxiliaryData" ExposedProperty="false" AutoAdd="false"/>
+
+</Parameter>
+
+</Data>
+
+</PipelineDocument>

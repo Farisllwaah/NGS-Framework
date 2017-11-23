@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Floodplain Mapping workflow (Figure 5 in Ramakrishnan and Gannon) -->
+<adag name="TestingMLPipeline" taskCount="8" fileCount="0" childCount="7">
+	<task id="imf" namespace="TestingMLPipeline" name="IMPORT FILE" runtime="14.4" >
+		<uses file="mlpipeline_in.dat" link="input" size="35651584"/>
+		<uses file="imf_out.dat" link="output" size="4080218931"/>
+		<uses file="imf_Mtlab1_out.dat" link="output" size="4080218931"/>
+	</task>
+	
+	<task id="fildu" namespace="TestingMLPipeline" name="Filter Duplication" runtime="16.5" >
+		<uses file="imf_out.dat" link="input" size="849346560"/>
+		<uses file="fildu_out.dat" link="output" size="2900361216"/>
+		<uses file="fildu_Mtlab2" link="output" size="4080218931"/>
+	
+	</task>
+	<task id="CW" namespace="TestingMLPipeline" name="ClustalW" runtime="10.8" >
+		<uses file="fildu_out.dat" link="input" size="35651584"/>
+		<uses file="cw_out.dat" link="output" size="4724464025"/>
+		<uses file="cw_Mtlab3_in.dat"link="output" size="4080218931"/>
+	</task>
+	<task id="csvea" namespace="TestingMLPipeline" name="CSVExportA" runtime="16.2" >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csvea_out.dat" link="output" size="6816792576"/>
+		<uses file="csvea_Mtlab4" link="output" size="4080218931"/>
+	</task>
+	<task id="csveb" namespace="TestingMLPipeline" name="CSVExportB" runtime="39.6" >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csveb_out.dat" link="output" size="22572695552"/>
+		<uses file="csveb_Mtlab5" link="output" size="4080218931"/>
+	</task>
+	<task id="mem" namespace="TestingMLPipeline" name="MEGA_MAX" runtime="46.8" >
+		<uses file="cw_out.dat" link="input" size="2900361216"/>
+		<uses file="mem_out" link="output" size="11974737"/>
+		<uses file="mem_Mtlab6" link="output" size="4080218931"/>
+	</task>
+	<task id="exa" namespace="TestingMLPipeline" name="ExportfileA" runtime="20.0" >
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exa_out.dat" link="output" size="14680064"/>
+		<uses file="exa_Mtlab7" link="output" size="4080218931"/>
+	</task>
+	<task id="exb" namespace="TestingMLPipeline" name="Exportfileb" runtime="28.8" >
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exb_out.dat" link="output" size="14680064"/>
+		<uses file="Mtlab8_in.dat" link="output" size="4080218931"/>
+	</task>
+	<child ref="fildu">
+		<parent ref="imf"/>
+	</child>
+	<child ref="CW">
+		<parent ref="fildu"/>
+	</child>
+	<child ref="csvea">
+		<parent ref="fildu"/>
+	</child>
+	<child ref="csveb">
+		<parent ref="fildu"/>
+	</child>
+	
+	<child ref="mem">
+		<parent ref="CW"/>
+	</child>
+	<child ref="exa">
+		<parent ref="mem"/>
+	</child>
+	<child ref="exb">
+		<parent ref="mem"/>
+	</child>
+	
+</adag>

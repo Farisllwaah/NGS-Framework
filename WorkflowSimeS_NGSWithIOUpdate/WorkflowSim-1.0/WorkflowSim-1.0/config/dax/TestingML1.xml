@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Floodplain Mapping workflow (Figure 5 in Ramakrishnan and Gannon) -->
+<adag name="TestingMLPipeline" taskCount="8" fileCount="0" childCount="7" libraryCouny="5">
+	<task id="imf" namespace="TestingMLPipeline" name="IMPORT FILE" runtime="0.1"  use-library="yes">
+		<uses file="mlpipeline_in.dat" link="input" size="35651584"/>
+		<uses file="imf_out.dat" link="output" size="4080218931"/>
+		
+	</task>
+	<task id="fildu" namespace="TestingMLPipeline" name="Filter Duplication" runtime="0.1" use-library="yes" >
+		<uses file="imf_out.dat" link="input" size="849346560"/>
+		<uses file="fildu_out.dat" link="output" size="2900361216"/>
+		
+	</task>
+	<task id="CW" namespace="TestingMLPipeline" name="ClustalW" runtime="2.22" use-library="yes"  >
+		<uses file="fildu_out.dat" link="input" size="35651584"/>
+		<uses file="cw_out.dat" link="output" size="4724464025"/>
+		
+	</task>
+	<task id="csvea" namespace="TestingMLPipeline" name="CSVExportA" runtime="0.1" use-library="yes"  >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csvea_out.dat" link="output" size="6816792576"/>
+	
+	</task>
+	<task id="csveb" namespace="TestingMLPipeline" name="CSVExportB" runtime="0.0" use-library="yes" >
+		<uses file="fildu_out.dat" link="input" size="559939584"/>
+		<uses file="csveb_out.dat" link="output" size="22572695552"/>
+	
+	</task>
+	<task id="mem" namespace="TestingMLPipeline" name="MEGA_MAX" runtime="955.1" use-library="yes"  >
+		<uses file="cw_out.dat" link="input" size="2900361216"/>
+		<uses file="mem_out" link="output" size="11974737"/>
+		
+	</task>
+	<task id="exa" namespace="TestingMLPipeline" name="ExportfileA"  runtime="0.0" use-library="yes">
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exa_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	<task id="exb" namespace="TestingMLPipeline" name="Exportfileb" runtime="0.1" use-library="no" >
+		<uses file="mem_out.dat" link="input" size="2900361216"/>
+		<uses file="exb_out.dat" link="output" size="14680064"/>
+		
+	</task>
+	
+	
+	<task-lib library="core-lib" storage="10000" installationtime='1.2'>
+    <dependencies task="imf"/>
+    <dependencies task="fildu"/> 
+	<dependencies task= "CW"/> 
+	<dependencies task="mem"/>
+	<dependencies task="csvea"/>
+	<dependencies task="csveb"/>
+	<dependencies task="exa"/>
+	<dependencies task="exb"/>
+	</task-lib>	
+	
+	<task-lib library="Java" storage="21000" installationtime='1.8'>
+    <dependencies task="imf"/>
+    <dependencies task="fildu"/> 
+	<dependencies task= "CW"/> 
+	<dependencies task="mem"/>
+	<dependencies task="csvea"/>
+	<dependencies task="csveb"/>
+	<dependencies task="exa"/>
+	<dependencies task="exb"/>
+	</task-lib>	
+	
+	<task-lib library="ClustalW-lib" storage="31000" installationtime='1.9'>
+    <dependencies task= "CW"/> 
+	</task-lib>
+	
+	<task-lib library="Wine" storage="15000" installationtime='2.0'>
+    <dependencies task= "mem"/> 
+	</task-lib>
+	
+	<task-lib library="Mega-CC" storage='11000' installationtime='2.2'>
+    <dependencies task= "mem"/> 
+	</task-lib>
+	
+	<child ref="fildu">
+		<parent ref="imf"/>
+	</child>
+	<child ref="CW">
+		<parent ref="fildu"/>
+	</child>
+	<child ref="csvea">
+		<parent ref="fildu"/>
+	</child>
+	<child ref="csveb">
+		<parent ref="fildu"/>
+	</child>
+	<child ref="mem">
+		<parent ref="CW"/>
+	</child>
+	<child ref="exa">
+		<parent ref="mem"/>
+	</child>
+	<child ref="exb">
+		<parent ref="mem"/>
+	</child>
+	
+	
+	
+	
+	
+	
+</adag>

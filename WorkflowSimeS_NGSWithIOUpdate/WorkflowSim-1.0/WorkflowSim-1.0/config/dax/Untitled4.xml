@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adag xmlns="https://eubrazilcc-esc.i3m.upv.es/beta" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/DAX http://pegasus.isi.edu/schema/dax-2.1.xsd" version="1.0" count="1" index="0" name="test" jobCount="8" fileCount="0" childCount="7">
+    <!-- part 1: list of all referenced files (may be empty) -->
+    <!-- part 2: definition of all jobs (at least one) -->
+    
+    
+    <job id="ID00000" namespace="TestingMLPipeline" name="ImportFile" version="1.0" runtime="20.0">
+        
+        
+        <uses file="IF_ID00000.txt" link="output" register="true" transfer="true" optional="false" type="data" size="4174004"/>
+        
+    </job>
+    <job id="ID00001" namespace="TestingMLPipeline" name="FilterDuplication" version="1.0" runtime="20.2">
+        
+        <uses file="IF_ID00000.txt" link="input" register="true" transfer="true" optional="false" type="data" size="4174004"/>
+        <uses file="FD_ID00001.txt" link="output" register="true" transfer="true" optional="false" type="data" size="4153521"/>
+        
+        
+    </job>
+    <job id="ID00002" namespace="TestingMlPipeline" name="ClustalW" version="1.0" runtime="20.3">
+        
+        <uses file="FD_ID00001.txt" link="input" register="true" transfer="true" optional="false" type="data" size="4153521"/>
+        <uses file="CW.txt" link="output" register="true" transfer="true" optional="false" type="data" size="4167312"/>
+        
+        
+    </job>
+    <job id="ID00003" namespace="TestingMLPipeline" name="CSVExportA" version="1.0" runtime="20.4">
+        
+        <uses file="FD.txt" link="input" register="true" transfer="true" optional="false" type="data" size="4153521"/>
+        <uses file="CV.txt" link="output" register="true" transfer="true" optional="false" type="data" size="314191"/>
+        
+    </job>
+    <job id="ID00004" namespace="TestingMLPipline" name="CSVExportB" version="1.0" runtime="20.5">
+        
+        <uses file="FD.txt" link="input" register="true" transfer="true" optional="false" type="data" size="4153521"/>
+        <uses file="CV.txt" link="output" register="true" transfer="true" optional="false" type="data" size="228602"/>
+    </job>
+    <job id="ID00005" namespace="TestingMLPipeline" name="MEGA-Max" version="1.0" runtime="20.6">
+        
+        <uses file="CW.txt" link="input" register="true" transfer="true" optional="false" type="data" size="4167312"/>
+        <uses file="MG.txt" link="output" register="true" transfer="true" optional="false" type="data" size="176356"/>
+        
+    </job>
+    <job id="ID00006" namespace="TestingMLPipeline" name="ExportFileA" version="1.0" runtime="20.7">
+        
+        <uses file="MG.txt" link="input" register="true" transfer="true" optional="false" type="data" size="176356"/>
+        <uses file="EXA.txt" link="output" register="true" transfer="true" optional="false" type="data" size="251206"/>
+        <uses file="TestingMLPipeline.txt" link="output" register="true" transfer="true" optional="false" type="data" size="251206"/>
+    </job>
+    
+    <job id="ID0007" namespace="TestingMLPipeline" name="ExportFileB" version="1.0" runtime="20.8">
+        
+        
+        <uses file="MG.txt" link="input" register="true" transfer="true" optional="false" type="data" size="176356"/>
+        <uses file="EXB.txt" link="output" register="true" transfer="true" optional="false" type="data" size="251206"/>
+        <uses file="TestingMLPipeline.txt" link="output" register="true" transfer="true" optional="false" type="data" size="251206"/>
+    </job>
+      
+    <!-- part 3: list of control-flow dependencies (may be empty) -->
+    <child ref="ID00001">
+        <parent ref="ID00000"/>
+    </child>
+    <child ref="ID00002">
+        <parent ref="ID00001"/>
+    </child>
+    <child ref="ID00003">
+        <parent ref="ID00001"/>
+        
+    </child>
+    <child ref="ID00004">
+        <parent ref="ID00001"/>
+        
+    </child>
+    <child ref="00005">
+        <parent ref="ID00002"/>
+        
+    </child>
+    <child ref="ID0006">
+        <parent ref="ID00005"/>
+    </child>
+    <child ref="ID0007">
+        <parent ref="ID00005"/>
+        
+    </child>
+      
+</adag>

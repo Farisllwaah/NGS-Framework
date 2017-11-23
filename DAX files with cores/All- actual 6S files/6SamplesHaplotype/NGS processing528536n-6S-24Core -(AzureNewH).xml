@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Floodplain Mapping workflow (Figure 5 in Ramakrishnan and Gannon) -->
+<adag name="NGSprocessingPipeline" taskCount="38" fileCount="0" childCount="35" libraryCouny="3">
+	<task id="BWA_A1_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="11688"  islibrary="no">
+		<uses file="InputDir_BWA_A1_AL.dat" link="input" size="8604795467"/>
+		<uses file="BWA_A1_AL_out.dat" link="output" size="9024278017"/>
+		
+	</task>
+	<task id="BWA_B1_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="9840"  islibrary="no">
+		<uses file="InputDir_BWA_B1_AL.dat" link="input" size="8532163193"/>
+		<uses file="BWA_B1_AL_out.dat" link="output" size="8942785690"/>
+		
+	</task>
+	<task id="BWA_A2_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="11668"  islibrary="no">
+		<uses file="InputDir_BWA_A2_AL.dat" link="input" size="8555662374"/>
+		<uses file="BWA_A2_AL_out.dat" link="output" size="8972896717"/>
+		
+	</task>
+	<task id="BWA_B2_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="10239"  islibrary="no">
+		<uses file="InputDir_BWA_B2_AL.dat" link="input" size="7515997511"/>
+		<uses file="BWA_B2_AL_out.dat" link="output" size="7905513821"/>
+		
+	</task>
+	<task id="BWA_A3_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="9755"  islibrary="no">
+		<uses file="InputDir_BWA_A3_AL.dat" link="input" size="8362710595"/>
+		<uses file="BWA_A3_AL_out.dat" link="output" size="8764579101"/>
+		
+	</task>
+	<task id="BWA_B3_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="11157"  islibrary="no">
+		<uses file="InputDir_BWA_B3_AL.dat" link="input" size="7266785289"/>
+		<uses file="BWA_B3_AL_out.dat" link="output" size="7639832925"/>
+		
+	</task>
+	<task id="BWA_A4_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="8154"  islibrary="no">
+		<uses file="InputDir_BWA_A4_AL.dat" link="input" size="6459945347"/>
+		<uses file="BWA_A4_AL_out.dat" link="output" size="6798163185"/>
+		
+	</task>
+	<task id="BWA_B4_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="7688"  islibrary="no">
+		<uses file="InputDir_BWA_B4_AL.dat" link="input" size="6846534198"/>
+		<uses file="BWA_B4_AL_out.dat" link="output" size="7200947922"/>
+		
+	</task>
+	<task id="BWA_A5_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="10488"  islibrary="no">
+		<uses file="InputDir_BWA_A5_AL.dat" link="input" size="7084903111"/>
+		<uses file="BWA_A5_AL_out.dat" link="output" size="7450170816"/>
+		
+	</task>
+	<task id="BWA_B5_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="12535"  islibrary="no">
+		<uses file="InputDir_BWA_B5_AL.dat" link="input" size="7149927239"/>
+		<uses file="BWA_B5_AL_out.dat" link="output" size="7522574957"/>
+		
+	</task>
+	<task id="BWA_A6_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="10024"  islibrary="no">
+		<uses file="InputDir_BWA_A6_AL.dat" link="input" size="6911152941"/>
+		<uses file="BWA_A6_AL_out.dat" link="output" size="7273133944"/>
+		
+	</task>
+	<task id="BWA_B6_AL" namespace="NGSprocessingPipeline" name="BWA (Align lane)" runtime="11497"  islibrary="no">
+		<uses file="InputDir_BWA_A6_AL.dat" link="input" size="6243775514"/>
+		<uses file="BWA_B6_AL_out.dat" link="output" size="6567927260"/>
+		
+	</task>
+	
+	<task id="BWA1_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="19042"  islibrary="no">
+		<uses file="Input_sample1.dat" link="input" size="17967063707"/>
+		<uses file="BWA1_FEL_out.dat" link="output" size="12746116873"/>
+		
+	</task>
+	<task id="BWA2_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="20174"  islibrary="no">
+		<uses file="Input_sample2.dat" link="input" size="17737475818"/>
+		<uses file="BWA2_FEL_out.dat" link="output" size="12439534350"/>
+		
+	</task>
+	<task id="BWA3_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="19238"  islibrary="no">
+		<uses file="Input_sample3.dat" link="input" size="15545346746"/>
+		<uses file="BWA3_FEL_out.dat" link="output" size="11083388424"/>
+		
+	</task>
+	<task id="BWA4_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="14631"  islibrary="no">
+		<uses file="Input_sample4.dat" link="input" size="13366090445"/>
+		<uses file="BWA4_FEL_out.dat" link="output" size="9596034866"/>
+		
+	</task>
+	
+	<task id="BWA5_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="18805"  islibrary="no">
+		<uses file="Input_sample5.dat" link="input" size="14474081866"/>
+		<uses file="BWA5_FEL_out.dat" link="output" size="10344077481"/>
+		
+	</task>
+	<task id="BWA6_FEL" namespace="NGSprocessingPipeline" name="BWA (For each lane)" runtime="22378"  islibrary="no">
+		<uses file="Input_sample6.dat" link="input" size="14972745773"/>
+		<uses file="BWA6_FEL_out.dat" link="output" size="10684894579"/>
+		
+	</task>
+	
+	<task id="PICARD1" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="7619" islibrary="no" >
+		<uses file="BWA1_FEL_out.dat" link="input" size="11335839402"/>
+		<uses file="PICARD1_out.dat" link="output" size="7410842409"/>
+		
+	</task>
+	<task id="PICARD2" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="8101" islibrary="no" >
+		<uses file="BWA2_FEL_out.dat" link="input" size="11316144438"/>
+		<uses file="PICARD2_out.dat" link="output" size="9078300564"/>
+		
+	</task>
+	<task id="PICARD3" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="8474" islibrary="no" >
+		<uses file="BWA3_FEL_out.dat" link="input" size="12187484531"/>
+		<uses file="PICARD3_out.dat" link="output" size="7975336025"/>
+		
+	</task>
+	<task id="PICARD4" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="6455" islibrary="no" >
+		<uses file="BWA4_FEL_out.dat" link="input" size="8788010149"/>
+		<uses file="PICARD4_out.dat" link="output" size="7151157901"/>
+		
+	</task>
+	<task id="PICARD5" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="8750" islibrary="no" >
+		<uses file="BWA5_FEL_out.dat" link="input" size="11733168987"/>
+		<uses file="PICARD5_out.dat" link="output" size="9531169441"/>
+		
+	</task>
+	<task id="PICARD6" namespace="NGSprocessingPipeline" name="Picard-Tools Workflow" runtime="10824" islibrary="no" >
+		<uses file="BWA6_FEL_out.dat" link="input" size="12587829996"/>
+		<uses file="PICARD6_out.dat" link="output" size="11781607393"/>
+		
+	</task>
+	<task id="GATKP1_1" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="20050" islibrary="no"  >
+		<uses file="PICARD1_out.dat" link="input" size="7410842409"/>
+		<uses file="GATKP1_1_out.dat" link="output" size="2766455431"/>
+		
+	</task>
+	<task id="GATKP1_2" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="21165" islibrary="no"  >
+		<uses file="PICARD2_out.dat" link="input" size="9078300564"/>
+		<uses file="GATKP1_2_out.dat" link="output" size="3430566124"/>
+		
+	</task>
+	<task id="GATKP1_3" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="25178" islibrary="no"  >
+		<uses file="PICARD3_out.dat" link="input" size="7975336025"/>
+		<uses file="GATKP1_3_out.dat" link="output" size="2824411168"/>
+		
+	</task>
+	<task id="GATKP1_4" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="19809" islibrary="no"  >
+		<uses file="PICARD4_out.dat" link="input" size="7151157901"/>
+		<uses file="GATKP1_4_out.dat" link="output" size="2787108237"/>
+		
+	</task>
+	<task id="GATKP1_5" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="25296" islibrary="no"  >
+		<uses file="PICARD5_out.dat" link="input" size="9531169441"/>
+		<uses file="GATKP1_5_out.dat" link="output" size="3290220809"/>
+		
+	</task>
+	<task id="GATKP1_6" namespace="NGSprocessingPipeline" name="GATK phase 1" runtime="32519" islibrary="no"  >
+		<uses file="PICARD6_out.dat" link="input" size="11781607393"/>
+		<uses file="GATKP1_6_out.dat" link="output" size="3625215140"/>
+		
+	</task>
+	<task id="COVERAGE1" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="311" islibrary="no"  >
+		<uses file="GATKP1_1_out.dat" link="input" size="2766455431"/>
+		<uses file="COVERAGE1_out.dat" link="output" size="16125251"/>
+	
+	</task>
+	<task id="COVERAGE2" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="278" islibrary="no"  >
+		<uses file="GATKP1_2_out.dat" link="input" size="3430566124"/>
+		<uses file="COVERAGE2_out.dat" link="output" size="16132338"/>
+	
+	</task>
+	<task id="COVERAGE3" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="372" islibrary="no"  >
+		<uses file="GATKP1_3_out.dat" link="input" size="2824411168"/>
+		<uses file="COVERAGE3_out.dat" link="output" size="16126851"/>
+	
+	</task>
+	<task id="COVERAGE4" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="291" islibrary="no"  >
+		<uses file="GATKP1_4_out.dat" link="input" size="2787108237"/>
+		<uses file="COVERAGE4_out.dat" link="output" size="16126073"/>
+	
+	</task>
+	<task id="COVERAGE5" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="329" islibrary="no"  >
+		<uses file="GATKP1_5_out.dat" link="input" size="3290220809"/>
+		<uses file="COVERAGE5_out.dat" link="output" size="16123415"/>
+	
+	</task>
+	<task id="COVERAGE6" namespace="NGSprocessingPipeline" name="Coverage workflow" runtime="326" islibrary="no"  >
+		<uses file="GATKP1_6_out.dat" link="input" size="3625215140"/>
+		<uses file="COVERAGE6_out.dat" link="output" size="16090846"/>
+	
+	</task>
+	<task id="VARIANTA" namespace="NGSprocessingPipeline" name="Variant calling" runtime="12724" islibrary="no" >
+		
+		<uses file="AllfileGATKP_out.dat" link="input" size="225400657"/>
+		<uses file="VARIANTA_out.dat" link="output" size="185888101"/>
+	
+	</task>
+	<task id="HAPLOTYPECALLER1" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1465" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER1_out.dat" link="output" size="50865"/>
+	</task>
+	<task id="HAPLOTYPECALLER2" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="5939" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER2_out.dat" link="output" size="6337780"/>
+	</task>
+	<task id="HAPLOTYPECALLER3" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2693" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER3_out.dat" link="output" size="2915231"/>
+	</task>
+	<task id="HAPLOTYPECALLER4" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3840" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER4_out.dat" link="output" size="4868990"/>
+	</task>
+	<task id="HAPLOTYPECALLER5" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3243" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER5_out.dat" link="output" size="4109350"/>
+	</task>
+	<task id="HAPLOTYPECALLER6" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2878" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER6_out.dat" link="output" size="3044099"/> 
+	</task>
+	<task id="HAPLOTYPECALLER7" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3691" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER7_out.dat" link="output" size="3796151"/>
+	</task>
+	<task id="HAPLOTYPECALLER8" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3086" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER8_out.dat" link="output" size="3130405"/>
+	</task>
+	<task id="HAPLOTYPECALLER9" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2766" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER9_out.dat" link="output" size="3579049"/>
+	</task>
+	<task id="HAPLOTYPECALLER10" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3266" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER10_out.dat" link="output" size="3651261"/> 
+	</task>
+	<task id="HAPLOTYPECALLER11" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2987" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER11_out.dat" link="output" size="2921041"/> 
+	</task>
+	<task id="HAPLOTYPECALLER12" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3139" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER12_out.dat" link="output" size="3331723"/> 
+	</task>
+	<task id="HAPLOTYPECALLER13" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2428" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER13_out.dat" link="output" size="3693518"/> 
+	</task>
+	<task id="HAPLOTYPECALLER14" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2152" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER14_out.dat" link="output" size="2815872"/> 
+	</task>
+	<task id="HAPLOTYPECALLER15" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2157" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER15_out.dat" link="output" size="2470246"/> 
+	</task>
+	<task id="HAPLOTYPECALLER16" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2093" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER16_out.dat" link="output" size="2613389"/> 
+	</task>
+	<task id="HAPLOTYPECALLER17" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2045" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER17_out.dat" link="output" size="2241884"/> 
+	</task>
+	<task id="HAPLOTYPECALLER18" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2310" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER18_out.dat" link="output" size="3442296"/> 
+	</task>
+	<task id="HAPLOTYPECALLER19" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2281" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER19_out.dat" link="output" size="3462806"/> 
+	</task>
+	<task id="HAPLOTYPECALLER20" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2054" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER20_out.dat" link="output" size="2070728"/> 
+	</task>
+	<task id="HAPLOTYPECALLER21" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1946" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER21_out.dat" link="output" size="2842621"/> 
+	</task>
+	<task id="HAPLOTYPECALLER22" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2457" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER22_out.dat" link="output" size="3406314"/> 
+	</task>
+	<task id="HAPLOTYPECALLER23" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3303" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER23_out.dat" link="output" size="4103813"/> 
+	</task>
+	<task id="HAPLOTYPECALLER24" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2315" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER24_out.dat" link="output" size="3181185"/> 
+	</task>
+	<task id="HAPLOTYPECALLER25" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3134" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER25_out.dat" link="output" size="4253005"/> 
+	</task>
+	<task id="HAPLOTYPECALLER26" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2343" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER26_out.dat" link="output" size="2930879"/> 
+	</task>
+	<task id="HAPLOTYPECALLER27" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3717" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER27_out.dat" link="output" size="3922308"/> 
+	</task>
+	<task id="HAPLOTYPECALLER28" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2331" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER28_out.dat" link="output" size="4996030"/> 
+	</task>
+	<task id="HAPLOTYPECALLER29" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2294" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER29_out.dat" link="output" size="4417469"/> 
+	</task>
+	<task id="HAPLOTYPECALLER30" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2661" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER30_out.dat" link="output" size="4668625"/> 
+	</task>
+	<task id="HAPLOTYPECALLER31" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2636" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER31_out.dat" link="output" size="5656667"/> 
+	</task>
+	<task id="HAPLOTYPECALLER32" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2754" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER32_out.dat" link="output" size="4096273"/> 
+	</task>
+	<task id="HAPLOTYPECALLER33" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2615" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER33_out.dat" link="output" size="5259265"/> 
+	</task>
+	<task id="HAPLOTYPECALLER34" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2036" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER34_out.dat" link="output" size="3768870"/> 
+	</task>
+	<task id="HAPLOTYPECALLER35" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1663" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER35_out.dat" link="output" size="2697165"/> 
+	</task>
+	<task id="HAPLOTYPECALLER36" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1637" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER36_out.dat" link="output" size="1878995"/> 
+	</task>
+	<task id="HAPLOTYPECALLER37" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1892" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER37_out.dat" link="output" size="1957485"/> 
+	</task>
+	<task id="HAPLOTYPECALLER38" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1988" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER38_out.dat" link="output" size="3494716"/> 
+	</task>
+	<task id="HAPLOTYPECALLER39" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2719" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER39_out.dat" link="output" size="2967893"/> 
+	</task>
+	<task id="HAPLOTYPECALLER40" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2415" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER40_out.dat" link="output" size="4036660"/> 
+	</task>
+	<task id="HAPLOTYPECALLER41" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3451" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER41_out.dat" link="output" size="7677699"/> 
+	</task>
+	<task id="HAPLOTYPECALLER42" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="4642" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER42_out.dat" link="output" size="9058674"/> 
+	</task>
+	<task id="HAPLOTYPECALLER43" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2643" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER43_out.dat" link="output" size="3822837"/> 
+	</task>
+	<task id="HAPLOTYPECALLER44" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2984" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER44_out.dat" link="output" size="9852810"/> 
+	</task>
+	<task id="HAPLOTYPECALLER45" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3332" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER45_out.dat" link="output" size="4692557"/> 
+	</task>
+	<task id="HAPLOTYPECALLER46" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2263" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER46_out.dat" link="output" size="3452731"/> 
+	</task>
+	<task id="HAPLOTYPECALLER47" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="3592" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER47_out.dat" link="output" size="4675702"/> 
+	</task>
+	<task id="HAPLOTYPECALLER48" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2197" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER48_out.dat" link="output" size="1703603"/> 
+	</task>
+	<task id="HAPLOTYPECALLER49" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="2494" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER49_out.dat" link="output" size="1649324"/> 
+	</task>
+	<task id="HAPLOTYPECALLER50" namespace="NGSprocessingPipeline" name="Haplotype Caller" runtime="1449" islibrary="no" >
+	    <uses file="VARIANTA_out.dat" link="input" size="19622226296"/>
+		<uses file="HAPLOTYPECALLER50_out.dat" link="output" size="816751"/> 
+	</task>
+	<task id="VARIANTB" namespace="NGSprocessingPipeline" name="Variant calling" runtime="0.1" islibrary="no" >
+	    <uses file="HAPLOTYPECALLER1_out.dat" link="input" size="50865"/>
+		<uses file="HAPLOTYPECALLER2_out.dat" link="input" size="6337780"/>
+		<uses file="HAPLOTYPECALLER3_out.dat" link="input" size="2915231"/>
+		<uses file="HAPLOTYPECALLER4_out.dat" link="input" size="4868990"/>
+		<uses file="HAPLOTYPECALLER5_out.dat" link="input" size="4109350"/>
+		<uses file="HAPLOTYPECALLER6_out.dat" link="input" size="3044099"/>
+		<uses file="HAPLOTYPECALLER7_out.dat" link="input" size="3796151"/>
+		<uses file="HAPLOTYPECALLER8_out.dat" link="input" size="3130405"/>
+		<uses file="HAPLOTYPECALLER9_out.dat" link="input" size="3579049"/>
+		<uses file="HAPLOTYPECALLER10_out.dat" link="input" size="3651261"/>
+		<uses file="HAPLOTYPECALLER11_out.dat" link="input" size="2921041"/>
+		<uses file="HAPLOTYPECALLER12_out.dat" link="input" size="3331723"/>
+		<uses file="HAPLOTYPECALLER13_out.dat" link="input" size="3693518"/>
+		<uses file="HAPLOTYPECALLER14_out.dat" link="input" size="2815872"/>
+		<uses file="HAPLOTYPECALLER15_out.dat" link="input" size="2470246"/>
+		<uses file="HAPLOTYPECALLER16_out.dat" link="input" size="2613389"/>
+		<uses file="HAPLOTYPECALLER17_out.dat" link="input" size="2241884"/>
+		<uses file="HAPLOTYPECALLER18_out.dat" link="input" size="3442296"/>
+		<uses file="HAPLOTYPECALLER19_out.dat" link="input" size="3462806"/>
+		<uses file="HAPLOTYPECALLER20_out.dat" link="input" size="2070728"/>
+		<uses file="HAPLOTYPECALLER21_out.dat" link="input" size="2842621"/>
+		<uses file="HAPLOTYPECALLER22_out.dat" link="input" size="3406314"/>
+		<uses file="HAPLOTYPECALLER23_out.dat" link="input" size="4103813"/>
+		<uses file="HAPLOTYPECALLER24_out.dat" link="input" size="3181185"/>
+		<uses file="HAPLOTYPECALLER25_out.dat" link="input" size="4253005"/>
+		<uses file="HAPLOTYPECALLER26_out.dat" link="input" size="2930879"/>
+		<uses file="HAPLOTYPECALLER27_out.dat" link="input" size="3922308"/>
+		<uses file="HAPLOTYPECALLER28_out.dat" link="input" size="4996030"/>
+		<uses file="HAPLOTYPECALLER29_out.dat" link="input" size="4417469"/>
+		<uses file="HAPLOTYPECALLER30_out.dat" link="input" size="4668625"/>
+		<uses file="HAPLOTYPECALLER31_out.dat" link="input" size="5656667"/>
+		<uses file="HAPLOTYPECALLER32_out.dat" link="input" size="4096273"/>
+		<uses file="HAPLOTYPECALLER33_out.dat" link="input" size="5259265"/>
+		<uses file="HAPLOTYPECALLER34_out.dat" link="input" size="3768870"/>
+		<uses file="HAPLOTYPECALLER35_out.dat" link="input" size="2697165"/>
+		<uses file="HAPLOTYPECALLER36_out.dat" link="input" size="1878995"/>
+		<uses file="HAPLOTYPECALLER37_out.dat" link="input" size="1957485"/>
+		<uses file="HAPLOTYPECALLER38_out.dat" link="input" size="3494716"/>
+		<uses file="HAPLOTYPECALLER39_out.dat" link="input" size="2967893"/>
+		<uses file="HAPLOTYPECALLER40_out.dat" link="input" size="4036660"/>
+		<uses file="HAPLOTYPECALLER41_out.dat" link="input" size="7677699"/>
+		<uses file="HAPLOTYPECALLER42_out.dat" link="input" size="9058674"/>
+		<uses file="HAPLOTYPECALLER43_out.dat" link="input" size="3822837"/>
+		<uses file="HAPLOTYPECALLER44_out.dat" link="input" size="9852810"/>
+		<uses file="HAPLOTYPECALLER45_out.dat" link="input" size="4692557"/>
+		<uses file="HAPLOTYPECALLER46_out.dat" link="input" size="3452731"/>
+		<uses file="HAPLOTYPECALLER47_out.dat" link="input" size="4675702"/>
+		<uses file="HAPLOTYPECALLER48_out.dat" link="input" size="1703603"/>
+		<uses file="HAPLOTYPECALLER49_out.dat" link="input" size="1649324"/>
+		<uses file="HAPLOTYPECALLER50_out.dat" link="input" size="816751"/>
+		<uses file="VARIANTB_out.dat" link="output" size="6816792576"/> 
+	</task>
+	<task id="GATKP3" namespace="NGSprocessingPipeline" name="GATK phase 3" runtime="864" islibrary="no"  >
+		<uses file="VARIANTB_out.dat" link="input" size="185888101"/>
+		<uses file="GATKP3_out.dat" link="output" size="210104224"/>
+		
+	</task>
+	<task id="VCF1" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="137" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="45682852"/>
+		<uses file="VCF1_out.dat" link="output" size="36696053"/>
+		
+	</task>
+	<task id="VCF2" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="144" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="50717217"/>
+		<uses file="VCF2_out.dat" link="output" size="37242217"/>
+		
+	</task>
+	<task id="VCF3" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="129" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="46004485"/>
+		<uses file="VCF3_out.dat" link="output" size="36724210"/>
+		
+	</task>
+	<task id="VCF4" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="138" islibrary="no" >
+		<uses file="GATKP3_out.dat" link="input" size="45847750"/>
+		<uses file="VCF4_out.dat" link="output" size="36245572"/>
+		
+	</task>
+	<task id="VCF5" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="143" islibrary="no">
+		<uses file="GATKP3_out.dat" link="input" size="49725678"/>
+		<uses file="VCF5_out.dat" link="output" size="37673728"/>
+		
+	</task>
+	<task id="VCF6" namespace="NGSprocessingPipeline" name="VCF filters"  runtime="138" islibrary="no">
+		<uses file="GATKP3_out.dat" link="input" size="64368848"/>
+		<uses file="VCF6_out.dat" link="output" size="38270794"/>
+		
+	</task>
+	<task id="ANNOTATE1" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1170" islibrary="no" >
+		<uses file="VCF1_out.dat" link="input" size="36696053"/>
+		<uses file="ANNOTATE1_out.dat" link="output" size="192898685"/>
+		
+	</task>
+	<task id="ANNOTATE2" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1226" islibrary="no" >
+		<uses file="VCF2_out.dat" link="input" size="37242217"/>
+		<uses file="ANNOTATE2_out.dat" link="output" size="193107082"/>
+		
+	</task>
+	<task id="ANNOTATE3" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1206" islibrary="no" >
+		<uses file="VCF3_out.dat" link="input" size="36724210"/>
+		<uses file="ANNOTATE3_out.dat" link="output" size="196349909"/>
+		
+	</task>
+	<task id="ANNOTATE4" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1169" islibrary="no" >
+		<uses file="VCF4_out.dat" link="input" size="36245572"/>
+		<uses file="ANNOTATE4_out.dat" link="output" size="190292809"/>
+		
+	</task>
+	<task id="ANNOTATE5" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1234" islibrary="no" >
+		<uses file="VCF5_out.dat" link="input" size="37673728"/>
+		<uses file="ANNOTATE5_out.dat" link="output" size="198946374"/>
+		
+	</task>
+	<task id="ANNOTATE6" namespace="NGSprocessingPipeline" name="Annotate sample" runtime="1201" islibrary="no" >
+		<uses file="VCF6_out.dat" link="input" size="38270794"/>
+		<uses file="ANNOTATE6_out.dat" link="output" size="202558883"/>
+		
+	</task>
+		
+		
+	<child ref="BWA1_FEL">
+	    <parent ref="BWA_A1_AL"/>
+		<parent ref="BWA_B1_AL"/>
+	</child>
+	<child ref="BWA2_FEL">
+	    <parent ref="BWA_A2_AL"/>
+		<parent ref="BWA_B2_AL"/>
+	</child>
+	<child ref="BWA3_FEL">
+	    <parent ref="BWA_A3_AL"/>
+		<parent ref="BWA_B3_AL"/>
+	</child>
+	<child ref="BWA4_FEL">
+	    <parent ref="BWA_A4_AL"/>
+		<parent ref="BWA_B4_AL"/>
+	</child>
+	<child ref="BWA5_FEL">
+	    <parent ref="BWA_A5_AL"/>
+		<parent ref="BWA_B5_AL"/>
+	</child>
+	<child ref="BWA6_FEL">
+	    <parent ref="BWA_A6_AL"/>
+		<parent ref="BWA_B6_AL"/>
+	</child>
+	<child ref="PICARD1">
+	    <parent ref="BWA1_FEL"/>
+	</child>
+	<child ref="PICARD2">
+	    <parent ref="BWA2_FEL"/>
+	</child>
+	<child ref="PICARD3">
+		<parent ref="BWA3_FEL"/>
+	</child>
+	<child ref="PICARD4">
+		<parent ref="BWA4_FEL"/>
+	</child>
+	<child ref="PICARD5">
+		<parent ref="BWA5_FEL"/>
+	</child>
+	<child ref="PICARD6">
+		<parent ref="BWA6_FEL"/>
+	</child>
+	<child ref="GATKP1_1">
+		<parent ref="PICARD1"/>
+	</child>
+	<child ref="GATKP1_2">
+		<parent ref="PICARD2"/>
+	</child>
+	<child ref="GATKP1_3">
+		<parent ref="PICARD3"/>
+	</child>
+	<child ref="GATKP1_4">
+		<parent ref="PICARD4"/>
+	</child>
+	<child ref="GATKP1_5">
+		<parent ref="PICARD5"/>
+	</child>
+	<child ref="GATKP1_6">
+		<parent ref="PICARD6"/>
+	</child>
+	<child ref="COVERAGE1">
+		<parent ref="GATKP1_1"/>
+	</child>
+	<child ref="COVERAGE2">
+		<parent ref="GATKP1_2"/>
+	</child>
+	<child ref="COVERAGE3">
+		<parent ref="GATKP1_3"/>
+	</child>
+	<child ref="COVERAGE4">
+		<parent ref="GATKP1_4"/>
+	</child>
+	<child ref="COVERAGE5">
+		<parent ref="GATKP1_5"/>
+	</child>
+	<child ref="COVERAGE6">
+		<parent ref="GATKP1_6"/>
+	</child>
+	<child ref="VARIANTA">
+		<parent ref="GATKP1_1"/>
+		<parent ref="GATKP1_2"/>
+		<parent ref="GATKP1_3"/>
+		<parent ref="GATKP1_4"/>
+		<parent ref="GATKP1_5"/>
+		<parent ref="GATKP1_6"/>
+	</child>
+	<child ref="HAPLOTYPECALLER1">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER2">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER3">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER4">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER5">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER6">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER7">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER8">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER9">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER10">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER11">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER12">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER13">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER14">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER15">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER16">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER17">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER18">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER19">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER20">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER21">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER22">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER23">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER24">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER25">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER26">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER27">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER28">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER29">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER30">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER31">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER32">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER33">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER34">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER35">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER36">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER37">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER38">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER39">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER40">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER41">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER42">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER43">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER44">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER45">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER46">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER47">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER48">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER49">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="HAPLOTYPECALLER50">
+	<parent ref="VARIANTA"/>
+	</child>
+	<child ref="VARIANTB">
+	<parent ref="HAPLOTYPECALLER1"/>
+	<parent ref="HAPLOTYPECALLER2"/>
+	<parent ref="HAPLOTYPECALLER3"/>
+	<parent ref="HAPLOTYPECALLER4"/>
+	<parent ref="HAPLOTYPECALLER5"/>
+	<parent ref="HAPLOTYPECALLER6"/>
+	<parent ref="HAPLOTYPECALLER7"/>
+	<parent ref="HAPLOTYPECALLER8"/>
+	<parent ref="HAPLOTYPECALLER9"/>
+	<parent ref="HAPLOTYPECALLER10"/>
+	<parent ref="HAPLOTYPECALLER11"/>
+	<parent ref="HAPLOTYPECALLER12"/>
+	<parent ref="HAPLOTYPECALLER13"/>
+	<parent ref="HAPLOTYPECALLER14"/>
+	<parent ref="HAPLOTYPECALLER15"/>
+	<parent ref="HAPLOTYPECALLER16"/>
+	<parent ref="HAPLOTYPECALLER17"/>
+	<parent ref="HAPLOTYPECALLER18"/>
+	<parent ref="HAPLOTYPECALLER19"/>
+	<parent ref="HAPLOTYPECALLER20"/>
+	<parent ref="HAPLOTYPECALLER21"/>
+	<parent ref="HAPLOTYPECALLER22"/>
+	<parent ref="HAPLOTYPECALLER23"/>
+	<parent ref="HAPLOTYPECALLER24"/>
+	<parent ref="HAPLOTYPECALLER25"/>
+	<parent ref="HAPLOTYPECALLER26"/>
+	<parent ref="HAPLOTYPECALLER27"/>
+	<parent ref="HAPLOTYPECALLER28"/>
+	<parent ref="HAPLOTYPECALLER29"/>
+	<parent ref="HAPLOTYPECALLER30"/>
+	<parent ref="HAPLOTYPECALLER31"/>
+	<parent ref="HAPLOTYPECALLER32"/>
+	<parent ref="HAPLOTYPECALLER33"/>
+	<parent ref="HAPLOTYPECALLER34"/>
+	<parent ref="HAPLOTYPECALLER35"/>
+	<parent ref="HAPLOTYPECALLER36"/>
+	<parent ref="HAPLOTYPECALLER37"/>
+	<parent ref="HAPLOTYPECALLER38"/>
+	<parent ref="HAPLOTYPECALLER39"/>
+	<parent ref="HAPLOTYPECALLER40"/>
+	<parent ref="HAPLOTYPECALLER41"/>
+	<parent ref="HAPLOTYPECALLER42"/>
+	<parent ref="HAPLOTYPECALLER43"/>
+	<parent ref="HAPLOTYPECALLER44"/>
+	<parent ref="HAPLOTYPECALLER45"/>
+	<parent ref="HAPLOTYPECALLER46"/>
+	<parent ref="HAPLOTYPECALLER47"/>
+	<parent ref="HAPLOTYPECALLER48"/>
+	<parent ref="HAPLOTYPECALLER49"/>
+	<parent ref="HAPLOTYPECALLER50"/>
+	</child>
+	<child ref="GATKP3">
+		<parent ref="VARIANTB"/>
+	</child>
+	<child ref="VCF1">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF2">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF3">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF4">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF5">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="VCF6">
+		<parent ref="GATKP3"/>
+	</child>
+	<child ref="ANNOTATE1">
+		<parent ref="VCF1"/>
+	</child>
+	<child ref="ANNOTATE2">
+		<parent ref="VCF2"/>
+	</child>
+	<child ref="ANNOTATE3">
+		<parent ref="VCF3"/>
+	</child>
+	<child ref="ANNOTATE4">
+		<parent ref="VCF4"/>
+	</child>
+	<child ref="ANNOTATE5">
+		<parent ref="VCF5"/>
+	</child>
+	<child ref="ANNOTATE6">
+		<parent ref="VCF6"/>
+	</child>
+	
+	
+</adag>
