@@ -21,4 +21,4 @@ https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master/readme.txt.
 Initially, The framework needs input parameters such as MIPs and BandWidth that should be set before you are starting a test of a large
 input sample. So, you can run the Framework to work in a loop to find these parameters and then use them to configure input parameters. 
 For more details, you can see an example that is in the PDF file 
-https://github.com/Farisllwaah/NGSFramework/blob/master/How%20to%20create%20MIPs%20%26%20BW.pdf
+https://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIPs%20%26%20BW.pdf
