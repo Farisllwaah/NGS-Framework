@@ -46,8 +46,9 @@ training inputs. For example, We will train our input samples on 12 WorkflowSim 
 24 and 48. See the example in the following link:
 https://github.com/Farisllwaah/NGS-Framework/blob/master/Testing%2012-Samples.pdf
 
-## Be careful to change VMs according to the Cores number
- 
+# Be careful for VMs number
+Make sure that you use an appropriate number of the VMs by change  "int vmNum  =12;//number  of vms" according to the number of cores 
+you wanted to test. For example when you want to test 6-Sample on 24 cores then VMs value should be set to 24 "int vmNum  =24;//number  of vms", and 48 so far.
  
 
 
