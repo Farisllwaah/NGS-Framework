@@ -36,3 +36,15 @@ processing531881n-6S-12Core-(AzureNewH).XML"; to your working directory path. Go
 2- Run the main class i.e., org.workflowsim.eSC.Main Open eSCNGSTrainingTestingSamples.java, but to complete this class and make it run,
 you will need to set all variables on, raed through the text so that you can see the following link:
 https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
+
+
+# Testing a large samples
+
+The simulation environment was configured in the previous steps, i.e. MIPs & BW values now are known. However, each simulated VM 
+represented a workflow execution thread in the real cloud. So, we can now predict the runtime for testing data much larger than the
+training inputs. For example, We will train our input samples on 12 WorkflowSim VMs running 6 patient samples and then tested it on 12,
+24 and 48. 
+ 
+ 
+
+
