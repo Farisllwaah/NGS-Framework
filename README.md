@@ -25,6 +25,7 @@ https://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIP
 
 # How to use the Input parameters  
 
-## First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose 'Import'. 
-
-https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
+First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose 'Import'.
+Now, the code is ready to run, so you have to start with initial step which is getting an optimal values for both MIPs & BW, learing how 
+you can use all variables, see the PDF file https://github.com/Farisllwaah/NGS-
+Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
