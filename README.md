@@ -25,7 +25,14 @@ https://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIP
 
 # How to use the Input parameters  
 
-First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose 'Import'.
-Now, the code is ready to run, so you have to start with initial step which is getting an optimal values for both MIPs & BW, learing how 
-you can use all variables, see the following link:
+First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose
+'Import'. Now, the code is ready to run, so you have to start with initial step which is getting an optimal values for both MIPs & BW.
+
+# Run The Main class
+
+1- Replace the string daxPath = " /WorkflowSim-NGSIOWithlastUpdate/DAX files with cores/All- actual 6S files/6SamplesHaplotype/NGS
+processing531881n-6S-12Core-(AzureNewH).XML"; to your working directory path. Go to,  org.eScworkflowsim, open class GetSampleInput.java
+
+2- Run the main class i.e., org.workflowsim.eSC.Main Open eSCNGSTrainingTestingSamples.java, but to complete this class and make it run,
+you will need to set all variables on, raed through the text so that you can see the following link:
 https://github.com/Farisllwaah/NGS-Framework/blob/master/Thedescription%20of%20input%20parameters.pdf
