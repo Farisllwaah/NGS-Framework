@@ -10,7 +10,7 @@ Either Java version 1.6 or newer
 This software is built on to of WorkflowSim, which is an extension of the CloudSim simulator. Where we have adapted it to simulate the execution behavior of the NGS pipeline as implemented in e-Science Central (e-SC). So, for more information you can visit the link https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master/readme.txt.
 
 # Running the Framework for parameters
-Initially, The framework needs input parameters such as MIPs and BandWidth that should be set before you are starting a test of a large input sample. So, you can run the Framework to work in a loop to find these parameters and then use them to configure input parameters. For more details, you can see an example that is in the PDF filehttps://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIPs%20%26%20BW.pdf
+Initially, The framework needs input parameters such as MIPs and BandWidth that should be set before you are starting a test of a large input sample. So, you can run the Framework to work in a loop to find these parameters and then use them to configure input parameters. For more details, you can see an example that is in the PDF file https://github.com/Farisllwaah/NGS-Framework/blob/master/How%20to%20create%20MIPs%20%26%20BW.pdf
 
 # How to use the Input parameters
 First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose 'Import'. Now, the code is ready to run, so you have to start with initial step which is getting an optimal values for both MIPs & BW.
