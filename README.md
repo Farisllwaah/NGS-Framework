@@ -20,7 +20,7 @@ https://github.com/WorkflowSim/WorkflowSim-1.0/blob/master/readme.txt.
 
 First if you are using Eclipse, open your Eclipse, create a new java project called "Any name". Right click your project, choose
 'Import'. Now, the code is ready to run, so you have to learn how you are able to getting an optimal values for both MIPs & BW 
-parameters, so you can follow next step. 
+parameters, so please follow next step. 
 
 
 # Running the Framework for parameters
